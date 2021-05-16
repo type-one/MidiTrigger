@@ -1,0 +1,408 @@
+{
+	"Triggers": [
+  
+          
+         { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER16_MSB",
+           "Command":"echo",
+           "Argument" : "vol1 ##data##",		   
+		   "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"100",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"
+         },
+
+         { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER17_MSB",
+           "Command":"echo", 
+		   "Argument" : "vol2 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"100",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"		   
+         },         
+
+         { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER18_MSB",
+           "Command":"echo",
+           "Argument" : "vol3 ##data##",			   
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"100",	
+		   "FlipFlop":"false",		   
+		   "UpOnly":"false"
+         },
+
+         { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER19_MSB",
+           "Command":"echo",
+           "Argument" : "vol4 ##data##",		   
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"100",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"
+         },
+
+         { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER20_MSB",
+           "Command":"echo",
+           "Argument" : "vol5 ##data##",		   
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"100",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"
+         },
+
+         { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER21_MSB",
+           "Command":"echo",
+           "Argument" : "vol6 ##data##",		   
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"100",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"
+         },
+
+         { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER22_MSB",
+           "Command":"echo",
+           "Argument" : "vol7 ##data##",			   
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"100",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"
+         },
+
+         { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER23_MSB",
+           "Command":"echo",
+           "Argument" : "vol8 ##data##",			   
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"100",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"
+         },
+		 
+         { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER0_MSB",
+           "Command":"echo",
+           "Argument" : "slider1 ##data##",		   
+		   "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"100",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"
+         },
+
+         { "Input":"MIDICTRL_MODULATION_WHEEL_MSB",
+           "Command":"echo", 
+		   "Argument" : "slider2 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"100",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"		   
+         },         
+
+         { "Input":"MIDICTRL_BREATH_CONTROL_MSB",
+           "Command":"echo",
+           "Argument" : "slider3 ##data##",			   
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"100",	
+		   "FlipFlop":"false",
+		   "UpOnly":"false"		   
+         },
+
+         { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER3_MSB",
+           "Command":"echo",
+           "Argument" : "slider4 ##data##",		   
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"100",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"
+         },
+
+         { "Input":"MIDICTRL_FOOT_CONTROLLER_MSB",
+           "Command":"echo",
+           "Argument" : "slider5 ##data##",		   
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"100",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"
+         },
+
+         { "Input":"MIDICTRL_PORTAMENTO_TIME_MSB",
+           "Command":"echo",
+           "Argument" : "slider6 ##data##",		   
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"100",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"
+         },
+
+         { "Input":"MIDICTRL_DATA_ENTRY_MSB",
+           "Command":"echo",
+           "Argument" : "slider7 ##data##",			   
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"100",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"
+         },
+
+         { "Input":"MIDICTRL_MAIN_VOLUME_MSB",
+           "Command":"echo",
+           "Argument" : "slider8 ##data##",			   
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"100",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"
+         },	 
+
+
+         { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER0_LSB",
+           "Command":"echo",
+           "Argument" : "S1 ##data##",			   
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"true",
+		   "UpOnly":"false"
+         },
+
+         { "Input":"MIDICTRL_MODULATION_WHEEL_LSB",
+           "Command":"echo", 
+		   "Argument" : "S2 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"true",
+		   "UpOnly":"false"
+         },
+		 
+		 { "Input":"MIDICTRL_BREATH_CONTROL_LSB",
+           "Command":"echo", 
+		   "Argument" : "S3 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"true",
+		   "UpOnly":"false"
+         },
+		 
+		 { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER3_LSB",
+           "Command":"echo", 
+		   "Argument" : "S4 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"true",
+		   "UpOnly":"false"
+         },
+		 
+		 { "Input":"MIDICTRL_FOOT_CONTROLLER_LSB",
+           "Command":"echo", 
+		   "Argument" : "S5 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"true",
+		   "UpOnly":"false"
+         },
+		 
+		 { "Input":"MIDICTRL_PORTAMENTO_TIME_LSB",
+           "Command":"echo", 
+		   "Argument" : "S6 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"true",
+		   "UpOnly":"false"
+         },
+		 
+		 { "Input":"MIDICTRL_DATA_ENTRY_LSB",
+           "Command":"echo", 
+		   "Argument" : "S7 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"true",
+		   "UpOnly":"false"
+         },
+		 
+		 { "Input":"MIDICTRL_MAIN_VOLUME_LSB",
+           "Command":"echo", 
+		   "Argument" : "S8 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"true",
+		   "UpOnly":"false"
+         },
+		 
+		 { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER16_LSB",
+           "Command":"echo", 
+		   "Argument" : "M1 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"true",
+		   "UpOnly":"false"
+         },
+		 
+		 { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER17_LSB",
+           "Command":"echo", 
+		   "Argument" : "M2 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"true",
+		   "UpOnly":"false"
+         },
+		 
+		 { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER18_LSB",
+           "Command":"echo", 
+		   "Argument" : "M3 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"true",
+		   "UpOnly":"false"
+         },
+		 
+		 { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER19_LSB",
+           "Command":"echo", 
+		   "Argument" : "M4 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"true",
+		   "UpOnly":"false"
+         },		 
+		 
+		 { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER20_LSB",
+           "Command":"echo", 
+		   "Argument" : "M5 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"true",
+		   "UpOnly":"false"
+         },
+		 
+		 { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER21_LSB",
+           "Command":"echo", 
+		   "Argument" : "M6 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"true",
+		   "UpOnly":"false"
+         },
+		 
+		 { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER22_LSB",
+           "Command":"echo", 
+		   "Argument" : "M7 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"true",
+		   "UpOnly":"false"
+         },
+		 
+		 { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER23_LSB",
+           "Command":"echo", 
+		   "Argument" : "M8 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"true",
+		   "UpOnly":"false"
+         },
+		 
+		 { "Input":"MIDICTRL_DAMPER_PEDAL_ON_OFF",
+           "Command":"echo", 
+		   "Argument" : "R1 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"
+         },
+		 
+		 { "Input":"MIDICTRL_PORTAMENTO_ON_OFF",
+           "Command":"echo", 
+		   "Argument" : "R2 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"
+         },
+		 
+		 { "Input":"MIDICTRL_SUSTENUTO_ON_OFF",
+           "Command":"echo", 
+		   "Argument" : "R3 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"
+         },
+
+		 { "Input":"MIDICTRL_SOFT_PEDAL_ON_OFF",
+           "Command":"echo", 
+		   "Argument" : "R4 ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"false",
+		   "UpOnly":"false"
+         },		 
+		 
+		 { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER26_LSB",
+           "Command":"echo", 
+		   "Argument" : "track- ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"false",
+		   "UpOnly":"true"
+         },
+		 
+		 { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER27_LSB",
+           "Command":"echo", 
+		   "Argument" : "track+ ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"false",
+		   "UpOnly":"true"
+         },
+		 
+		 { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER9_LSB",
+           "Command":"echo", 
+		   "Argument" : "play ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"false",
+		   "UpOnly":"true"
+         },
+		 
+		 { "Input":"MIDICTRL_CONTINUOUS_CONTROLLER10_LSB",
+           "Command":"echo", 
+		   "Argument" : "stop ##data##",	
+           "Inject":"##data##",
+		   "RangeMin":"0",
+		   "RangeMax":"1",
+		   "FlipFlop":"false",
+		   "UpOnly":"true"
+         },
+
+          
+      ]
+}
