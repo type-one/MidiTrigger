@@ -23,10 +23,14 @@ Should be easily adapted to MacOSX as well
 
 Tested on Windows 10, Ubuntu Linux,  and Raspberry Pi 3 / Ubuntu Linux
 
+Launch in a shell using "miditrigger miditrigger.json"  (json file as 1st argument)
+
 
 
 Enjoy
 
 Laurent Lardinois / Type One (TFL-TDV)
+
 https://be.linkedin.com/in/laurentlardinois
+
 https://demozoo.org/sceners/19691/
