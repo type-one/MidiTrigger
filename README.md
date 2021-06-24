@@ -1,4 +1,7 @@
 # MidiTrigger
+
+https://github.com/type-one/MidiTrigger
+
 Bind shell commands to MIDI keyboard (i.e. Korg nanoKONTROL2)
 
 
