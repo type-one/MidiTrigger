@@ -385,7 +385,7 @@ public:
         }
     }
 
-    void process_message(double delta_time, const std::vector<unsigned char>& message)
+    void process_message(double /*delta_time*/, const std::vector<unsigned char>& message)
     {
         std::string label;
 
@@ -397,7 +397,7 @@ public:
             if ((message[0] >= 0xB0) && (message[0] <= 0xBF)) // Channel aftertouch on channel 1 - 16
             {
                 // MIDI_CONTROL_MODE_CHANGE
-                std::uint8_t channel = message[0] & 15;
+                // std::uint8_t channel = message[0] & 15;
                 std::uint8_t data0 = message[1];
                 std::uint8_t data1 = message[2];
 
@@ -478,55 +478,61 @@ public:
 
                         std::string cmd(command + " " + argument);
                         // std::cout << cmd << std::endl;
-                        system(cmd.c_str());
+
+                        const auto retval = system(cmd.c_str());
+                        if (retval < 0)
+                        {
+                            std::cerr << "system call to " << cmd.c_str() << " failed" << std::endl;
+                            return;
+                        }
                     }
                 }
             }
-            else if ((message[0] >= 0x80) && (message[0] <= 0x8F)) // Note Off on channel 1 - 16
-            {
-                // MIDI_NOTE_OFF
-                std::uint8_t channel = message[0] & 15;
-                std::uint8_t data0 = message[1];
-                std::uint8_t data1 = message[2];
+            // else if ((message[0] >= 0x80) && (message[0] <= 0x8F)) // Note Off on channel 1 - 16
+            //{
+            // MIDI_NOTE_OFF
+            // std::uint8_t channel = message[0] & 15;
+            // std::uint8_t data0 = message[1];
+            // std::uint8_t data1 = message[2];
 
-                // TODO : process
-            }
-            else if ((message[0] >= 0x90) && (message[0] <= 0x9F)) // Note On on channel 1 - 16
-            {
-                // MIDI_NOTE_ON
-                std::uint8_t channel = message[0] & 15;
-                std::uint8_t data0 = message[1];
-                std::uint8_t data1 = message[2];
+            // TODO : process
+            //}
+            // else if ((message[0] >= 0x90) && (message[0] <= 0x9F)) // Note On on channel 1 - 16
+            //{
+            // MIDI_NOTE_ON
+            //    std::uint8_t channel = message[0] & 15;
+            //    std::uint8_t data0 = message[1];
+            //    std::uint8_t data1 = message[2];
 
-                // TODO : process
-            }
-            else if ((message[0] >= 0xA0) && (message[0] <= 0xAF)) // Polyphonic aftertouch on channel 1 - 16
-            {
-                // MIDI_POLYPHONIC_AFTERTOUCH
-                std::uint8_t channel = message[0] & 15;
-                std::uint8_t data0 = message[1];
-                std::uint8_t data1 = message[2];
+            // TODO : process
+            //}
+            // else if ((message[0] >= 0xA0) && (message[0] <= 0xAF)) // Polyphonic aftertouch on channel 1 - 16
+            //{
+            // MIDI_POLYPHONIC_AFTERTOUCH
+            //    std::uint8_t channel = message[0] & 15;
+            //    std::uint8_t data0 = message[1];
+            //    std::uint8_t data1 = message[2];
 
-                // TODO : process
-            }
-            else if ((message[0] >= 0xD0) && (message[0] <= 0xDF)) // Channel aftertouch on channel 1 - 16
-            {
-                // MIDI_CHANNEL_AFTERTOUCH
-                std::uint8_t channel = message[0] & 15;
-                std::uint8_t data0 = message[1];
-                std::uint8_t data1 = message[2];
+            // TODO : process
+            //}
+            // else if ((message[0] >= 0xD0) && (message[0] <= 0xDF)) // Channel aftertouch on channel 1 - 16
+            //{
+            // MIDI_CHANNEL_AFTERTOUCH
+            //    std::uint8_t channel = message[0] & 15;
+            //    std::uint8_t data0 = message[1];
+            //    std::uint8_t data1 = message[2];
 
-                // TODO : process
-            }
-            else if ((message[0] >= 0xE0) && (message[0] <= 0xEF)) // Pitch wheel range on channel 1 - 16
-            {
-                // MIDI_PITCH_WHEEL_RANGE
-                std::uint8_t channel = message[0] & 15;
-                std::uint8_t data0 = message[1];
-                std::uint8_t data1 = message[2];
+            // TODO : process
+            //}
+            // else if ((message[0] >= 0xE0) && (message[0] <= 0xEF)) // Pitch wheel range on channel 1 - 16
+            //{
+            // MIDI_PITCH_WHEEL_RANGE
+            //    std::uint8_t channel = message[0] & 15;
+            //    std::uint8_t data0 = message[1];
+            //    std::uint8_t data1 = message[2];
 
-                // TODO : process
-            }
+            // TODO : process
+            //}
         }
 
         catch (std::exception& e)
