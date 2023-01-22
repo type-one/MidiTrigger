@@ -120,10 +120,17 @@ set(TARGET_3RDPARTY_SRC
         "${TARGET_3RDPARTY_JUTE_SRC}" 
 )
 
+set(TARGET_MIDI_SRC
+	    midi/parse_and_trigger.cpp
+)
+
 set(TARGET_SRC
         main.cpp
+		"${TARGET_MIDI_SRC}"
 		"${TARGET_3RDPARTY_SRC}"
 )
+
+include_directories("${PROJECT_SOURCE_DIR}")
 
 add_executable(miditrigger 
         "${TARGET_SRC}"
