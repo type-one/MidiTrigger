@@ -1,6 +1,6 @@
 //-----------------------------------------------------------------------------//
 // Midi Triggered Commands - Spare time development for fun                    //
-// (c) 2021-2022 Laurent Lardinois https://be.linkedin.com/in/laurentlardinois //
+// (c) 2021-2023 Laurent Lardinois https://be.linkedin.com/in/laurentlardinois //
 //                                                                             //
 // This software is provided 'as-is', without any express or implied           //
 // warranty.In no event will the authors be held liable for any damages        //
@@ -34,17 +34,17 @@
 #include "midi_events.hpp"
 #include "rtmidi/RtMidi.h"
 
-class ParseAndTrigger
+class parse_and_trigger
 {
 public:
-    ParseAndTrigger() = delete;
-    ParseAndTrigger(const ParseAndTrigger&) = delete;
-    ParseAndTrigger(ParseAndTrigger&&) = delete;
-    ParseAndTrigger& operator=(const ParseAndTrigger&) = delete;
-    ParseAndTrigger& operator=(ParseAndTrigger&&) = delete;
+    parse_and_trigger() = delete;
+    parse_and_trigger(const parse_and_trigger&) = delete;
+    parse_and_trigger(parse_and_trigger&&) = delete;
+    parse_and_trigger& operator=(const parse_and_trigger&) = delete;
+    parse_and_trigger& operator=(parse_and_trigger&&) = delete;
 
-    explicit ParseAndTrigger(const std::string& p_name);
-    ~ParseAndTrigger();
+    explicit parse_and_trigger(const std::string& p_name);
+    ~parse_and_trigger();
 
     void setup();
     void teardown();
@@ -55,9 +55,9 @@ public:
 private:
     jute::parser m_parser;
     jute::jValue m_parsed;
-    std::map<MidiControl, size_t> m_index_table;
-    std::map<MidiControl, bool> m_flipflop;
-    std::map<MidiControl, int> m_cache;
+    std::map<midi_control, size_t> m_index_table;
+    std::map<midi_control, bool> m_flipflop;
+    std::map<midi_control, int> m_cache;
     std::vector<std::unique_ptr<RtMidiIn> > m_midi;
     std::vector<std::string> m_midi_names;
     unsigned int m_nb_ports;

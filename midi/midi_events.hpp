@@ -1,6 +1,6 @@
 //-----------------------------------------------------------------------------//
 // Midi Triggered Commands - Spare time development for fun                    //
-// (c) 2021-2022 Laurent Lardinois https://be.linkedin.com/in/laurentlardinois //
+// (c) 2021-2023 Laurent Lardinois https://be.linkedin.com/in/laurentlardinois //
 //                                                                             //
 // This software is provided 'as-is', without any express or implied           //
 // warranty.In no event will the authors be held liable for any damages        //
@@ -27,7 +27,7 @@
 // http://www.onicos.com/staff/iz/formats/midi-event.html
 // http://www.onicos.com/staff/iz/formats/midi-cntl.html
 
-enum class MidiType
+enum class midi_type
 {
     MIDI_NOTE_OFF = 0x01,
     MIDI_NOTE_ON = 0x02,
@@ -37,7 +37,7 @@ enum class MidiType
     MIDI_CONTROL_MODE_CHANGE = 0x20
 };
 
-enum class MidiControl
+enum class midi_control
 {
     MIDICTRL_CONTINUOUS_CONTROLLER0_MSB = 0x00,
     MIDICTRL_MODULATION_WHEEL_MSB = 0x01,

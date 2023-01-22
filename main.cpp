@@ -1,6 +1,6 @@
 //-----------------------------------------------------------------------------//
 // Midi Triggered Commands - Spare time development for fun                    //
-// (c) 2021-2022 Laurent Lardinois https://be.linkedin.com/in/laurentlardinois //
+// (c) 2021-2023 Laurent Lardinois https://be.linkedin.com/in/laurentlardinois //
 //                                                                             //
 // This software is provided 'as-is', without any express or implied           //
 // warranty.In no event will the authors be held liable for any damages        //
@@ -27,15 +27,12 @@
 #include <memory>
 #include <utility>
 
-#if defined(_WIN32)
-#include <windows.h>
-#elif defined(__linux__)
+#if defined(__linux__)
 #include <signal.h>
-#include <unistd.h>
 #endif
 
 #if defined(__linux__)
-static ParseAndTrigger* g_instance = nullptr;
+static parse_and_trigger* g_instance = nullptr;
 
 static void finish(int /*ignore*/)
 {
@@ -50,7 +47,7 @@ int main(int argc, char* argv[])
 {
     if (argc > 1)
     {
-        auto mng = std::make_unique<ParseAndTrigger>(argv[1]);
+        auto mng = std::make_unique<parse_and_trigger>(argv[1]);
 
 #if defined(__linux__)
         g_instance = mng.get();
