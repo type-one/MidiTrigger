@@ -2,6 +2,8 @@
 // Midi Triggered Commands - Spare time development for fun                    //
 // (c) 2021-2023 Laurent Lardinois https://be.linkedin.com/in/laurentlardinois //
 //                                                                             //
+// https://github.com/type-one/MidiTrigger                                     //
+//                                                                             //
 // This software is provided 'as-is', without any express or implied           //
 // warranty.In no event will the authors be held liable for any damages        //
 // arising from the use of this software.                                      //
