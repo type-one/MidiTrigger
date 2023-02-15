@@ -82,11 +82,11 @@ set(CMAKE_C_FLAGS_RELEASE "-O3 -ffast-math -funsafe-math-optimizations -D NDEBUG
 
 elseif(WIN32)
 set(CMAKE_CXX_FLAGS "/D __WINDOWS_MM__")
-set(CMAKE_CXX_FLAGS_DEBUG "-D DEBUG")
+set(CMAKE_CXX_FLAGS_DEBUG "/D DEBUG")
 set(CMAKE_CXX_FLAGS_RELEASE "/Ox /D NDEBUG /fp:fast")
 
 set(CMAKE_C_FLAGS "")
-set(CMAKE_C_FLAGS_DEBUG "-D DEBUG")
+set(CMAKE_C_FLAGS_DEBUG "/D DEBUG")
 set(CMAKE_C_FLAGS_RELEASE "/Ox /D NDEBUG /fp:fast")
 endif()
 
